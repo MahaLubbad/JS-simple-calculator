@@ -1,0 +1,111 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'poppin' , sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    background: rgb(209, 218, 221);
+    display:flex ;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .calculator{
+    background: rgb(67, 72, 82); 
+    padding:0px;
+    border-radius: 10px;
+    max-width: 280px;
+  }
+  
+  
+  .display{
+    min-height: 100px;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .buttons-container {
+    background:rgb(75, 79, 85); 
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .display .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100%;
+      max-width: 100%;
+      overflow: auto;
+    text-align: right;
+    background:rgb(95, 99, 105) ;
+    border-radius: 7px;
+  
+  }
+  
+  .display .input {
+      width: 100%;
+      font-size: 20px;
+    color:rgb(196, 190, 190);
+   padding: 5px;
+  }
+  
+  .display .output {
+      font-size: 30px;
+      font-weight: 400;
+      width: 100%;
+    color:#fff ;
+    padding: 10px;
+  }
+  
+  div button 
+  {
+    border:0;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow:  -6px -6px 20px rgba(255, 255, 255, 0.1) ,  5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0.4vw;
+  }
+  
+  div button.operator{
+    color: rgb(69, 197, 214);
+  }
+  
+  div button.reset{
+    color: rgb(165, 38, 38);
+  }
+  
+  @media (max-width: 320px) {
+    div button 
+   {
+    width: 45px;
+    height: 45px;
+    font-size: 15px;
+  }
+  }
+  
+  @media (max-width: 250px) {
+    form button 
+  {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+  }
+  }
+  
